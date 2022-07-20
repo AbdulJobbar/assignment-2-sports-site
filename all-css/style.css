@@ -110,8 +110,8 @@ header a {
 .header-image {
 
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 20em;
+    width: 20em;
     border-radius: 50px;
     background-color: transparent;
 
