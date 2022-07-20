@@ -54,14 +54,15 @@ header a:hover {
 
 header a {
     display: inline-block;
-    background-color: rgb(167, 164, 164);
+    background-color: white;
     height: 30px;
     width: 150px;
 
-    color: white;
+    color: rgb(194, 16, 114);
     padding-left: 45px;
     padding-top: 20px;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
 }
 
 /* aside and blogs */

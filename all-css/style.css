@@ -14,6 +14,22 @@ a {
     text-decoration: none;
 }
 
+/* <!-- tablet button --> */
+#tablet-button {
+    padding: 8px 15px;
+    background-color: brown;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    position: relative;
+    left: 45%;
+    margin: 40px 0;
+    display: none;
+}
+
+
+
+
 /* header */
 .header-paragraph {
     padding: 1% 0% 0 5%;
@@ -50,18 +66,20 @@ header p {
 
 header a:hover {
     background-color: rgb(75, 7, 41);
+    color: white;
 }
 
 header a {
     display: inline-block;
-    background-color: rgb(167, 164, 164);
+    background-color: white;
     height: 30px;
     width: 150px;
 
-    color: white;
+    color: rgb(194, 16, 114);
     padding-left: 45px;
     padding-top: 20px;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
 }
 
 /* aside and blogs */
@@ -170,3 +188,55 @@ footer h2 {
 .fa-brands {
     color: white;
 }
+
+
+/* media-queri */
+
+
+/* small-device */
+
+@media only screen and (max-width:576px) {}
+
+
+
+/* tablet-queri */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .article-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #tablet-button {
+        display: block;
+    }
+
+    .header-paragraph h1 {
+        font-size: 40px;
+    }
+
+    .header-paragraph a {
+        margin-bottom: 20px;
+    }
+
+    .blog-container {
+        display: block;
+    }
+
+    .side-nav {
+        display: flex;
+
+    }
+
+    .blogs-nav {
+        width: 90%;
+        height: 7em;
+    }
+
+    body {
+        padding-right: 70px;
+    }
+
+}
+
+
+/* media-queri end*/
