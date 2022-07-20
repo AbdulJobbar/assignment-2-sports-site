@@ -207,6 +207,13 @@ footer h2 {
         display: block;
     }
 
+
+    .header P {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     body {
         width: auto;
     }

@@ -26,6 +26,7 @@ a {
     padding: 0%;
     border-radius: 50px;
     margin-top: 40px;
+
 }
 
 .header img {
@@ -187,6 +188,12 @@ footer h2 {
         display: block;
     }
 
+    .header P {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     body {
         width: auto;
     }
@@ -221,7 +228,11 @@ footer h2 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-
+    /* .header P {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } */
 
     .header-paragraph h1 {
         font-size: 40px;
