@@ -84,6 +84,56 @@ header a {
     box-shadow: 5px 5px 10px black;
 }
 
+
+
+/* headre-animation */
+
+@keyframes sliding {
+    from {
+
+        top: 500px;
+    }
+
+    to {
+        bottom: 13px;
+    }
+}
+
+.header:hover .header-paragraph h1 {
+    color: rgb(54, 202, 178);
+}
+
+.header-paragraph h1 {
+    transition: color 1s ease-in-out;
+}
+
+.header-image {
+
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: transparent;
+
+    animation: sliding 2s ease-in-out 1s infinite alternate;
+    animation-play-state: running;
+
+}
+
+.player:hover.header-image {
+
+    transform: rotate(50deg);
+
+}
+
+
+
+
+/* headre-animation end */
+
+
+
+
 /* -----------aside and blogs ---------*/
 
 .blog-container {
