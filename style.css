@@ -1,3 +1,168 @@
+/* common-style */
+
 body {
     font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+.header-paragraph {
+    padding: 1% 0% 0 5%;
+}
+
+.header {
+
+    display: flex;
+    background-color: rgb(194, 16, 114);
+    padding: 0%;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+.header img {
+    width: 100%;
+
+}
+
+
+
+
+header h1 {
+    color: white;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+header p {
+    color: azure;
+    width: 50%;
+    font-weight: 60;
+}
+
+header a:hover {
+    background-color: rgb(75, 7, 41);
+}
+
+header a {
+    display: inline-block;
+    background-color: rgb(167, 164, 164);
+    height: 30px;
+    width: 150px;
+
+    color: white;
+    padding-left: 45px;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+/* aside and blogs */
+
+.blog-container {
+    margin-top: 130px;
+    display: flex;
+}
+
+.blogs-nav {
+    background-color: black;
+    width: 250px;
+    height: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 40px 0 0;
+}
+
+.blogs-nav a {
+    display: block;
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    margin: 25px;
+    color: rgb(37, 35, 35);
+    padding-top: 20px;
+    padding-left: 40px;
+
+    border-radius: 5px;
+}
+
+#blog-button {
+    background-color: rgb(194, 16, 114);
+    color: white;
+}
+
+
+/* article style */
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.article {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 90%;
+    padding-bottom: 20px;
+    margin: 10px;
+
+}
+
+.article img {
+    width: 100%;
+}
+
+.comment-icon {
+    margin-left: 30px;
+}
+
+.article button {
+
+    padding: 5px 10px 5px 10px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.article-info {
+    padding-left: 4%;
+}
+
+
+
+/* footer style */
+
+.footer-p {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    left: 20%;
+}
+
+footer {
+    background-color: gray;
+    padding-bottom: 100px;
+}
+
+footer h2 {
+    position: relative;
+    left: 45%;
+}
+
+.social-icon {
+    position: relative;
+    left: 45%;
+    gap: 10px;
+}
+
+.social-icon a {
+    margin: 0 10px 50px 10px;
 }
