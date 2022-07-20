@@ -76,7 +76,7 @@ header a {
     }
 
     to {
-        bottom: 13px;
+        top: 0px;
     }
 }
 
@@ -91,12 +91,12 @@ header a {
 .header-image {
 
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 15em;
+    width: 15em;
     border-radius: 50px;
     background-color: transparent;
 
-    animation: sliding 2s ease-in-out 1s infinite alternate;
+    animation: sliding 2s ease-out 1s infinite alternate;
     animation-play-state: running;
 
 }
