@@ -30,7 +30,9 @@ a {
 
 
 
-/* header */
+/* ----------header------------ */
+
+
 .header-paragraph {
     padding: 1% 0% 0 5%;
 }
@@ -82,7 +84,7 @@ header a {
     box-shadow: 5px 5px 10px black;
 }
 
-/* aside and blogs */
+/* -----------aside and blogs ---------*/
 
 .blog-container {
     margin-top: 130px;
@@ -119,7 +121,11 @@ header a {
 }
 
 
-/* article style */
+#upcomming-button:hover {
+    background-color: rgb(194, 16, 114);
+}
+
+/*-------------- article style -------------*/
 
 .article-container {
     display: grid;
@@ -156,7 +162,7 @@ header a {
 
 
 
-/* footer style */
+/*----------- footer style-------------- */
 
 .footer-p {
     display: flex;
@@ -190,16 +196,45 @@ footer h2 {
 }
 
 
-/* media-queri */
+/* --------------media-queri --------------*/
 
 
-/* small-device */
+/* --------small-device -----------*/
 
-@media only screen and (max-width:576px) {}
+@media only screen and (max-width:576px) {
+
+    .header {
+        display: block;
+    }
+
+    body {
+        width: auto;
+    }
+
+    .blog-container {
+        display: block;
+    }
+
+    .article-container {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-p {
+        display: block;
+        position: relative;
+        left: 36%;
+    }
+
+    .social-icon a {
+        position: relative;
+        right: 12%;
+    }
+}
 
 
 
-/* tablet-queri */
+/*--------------- tablet device-queri -------------*/
 
 @media screen and (min-width:576px) and (max-width:992px) {
     .article-container {
@@ -236,7 +271,18 @@ footer h2 {
         padding-right: 70px;
     }
 
+    footer>.footer-p {
+        flex-direction: column;
+        position: relative;
+        left: 40%;
+    }
+
+    footer .social-icon {
+        position: relative;
+        right: 60%;
+    }
+
 }
 
 
-/* media-queri end*/
+/*--------------- media-queri end--------------*/

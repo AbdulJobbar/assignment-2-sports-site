@@ -101,6 +101,9 @@ header a {
     color: white;
 }
 
+#blogs-button:hover {
+    background-color: rgb(194, 16, 114);
+}
 
 /* article style */
 
@@ -170,3 +173,94 @@ footer h2 {
 .fa-brands {
     color: white;
 }
+
+
+
+/* media-queri */
+
+
+/* small-device */
+
+@media only screen and (max-width:576px) {
+
+    .header {
+        display: block;
+    }
+
+    body {
+        width: auto;
+    }
+
+    .blog-container {
+        display: block;
+    }
+
+    .article-container {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-p {
+        display: block;
+        position: relative;
+        left: 36%;
+    }
+
+    .social-icon a {
+        position: relative;
+        right: 12%;
+    }
+}
+
+
+
+/* tablet device-queri */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .article-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    .header-paragraph h1 {
+        font-size: 40px;
+    }
+
+    .header-paragraph a {
+        margin-bottom: 20px;
+    }
+
+    .blog-container {
+        display: block;
+    }
+
+    .side-nav {
+        display: flex;
+
+    }
+
+    .blogs-nav {
+        width: 90%;
+        height: 7em;
+    }
+
+    body {
+        padding-right: 70px;
+    }
+
+    footer>.footer-p {
+        flex-direction: column;
+        position: relative;
+        left: 40%;
+    }
+
+    footer .social-icon {
+        position: relative;
+        right: 60%;
+    }
+
+}
+
+
+/* media-queri end*/
